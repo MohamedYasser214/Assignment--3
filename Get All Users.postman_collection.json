@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "91fee5a6-e587-4660-9ca2-01e23211ce28",
+		"name": "Get All Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50596490",
+		"_collection_link": "https://mohamedyasser214-6950974.postman.co/workspace/Mohamed-Yasser-'s-Workspace~c1323d58-28b4-499b-8235-96da79dcddcb/collection/50596490-91fee5a6-e587-4660-9ca2-01e23211ce28?action=share&source=collection_link&creator=50596490"
+	},
+	"item": [
+		{
+			"name": "Add User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n     {\r\n        \"name\": \"Yasser  Mhammed\",\r\n        \"email\": \"mohamedYasser01022626414@gmail.com\",\r\n        \"password\": \"Ahmed@123\",\r\n        \"rePassword\": \"Ahmed@123\",\r\n        \"phone\": \"01030500701\",\r\n        \"id\": 1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "usertoken",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"YasserMM<ohammed\",\r\n    \"email\":\"mohamedYass123@gmail.com\",\r\n    \"password\":\"Ahmed@12223\",\r\n    \"rePassword\":\"Ahmed@1233\",\r\n    \"phone\":\"01030500701\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "usertoken",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Yasser  Mohammed\",\r\n    \"email\":\"mohamedYassewwwww4@gmail.com\",\r\n    \"password\":\"Ahmed@123\",\r\n    \"rePassword\":\"Ahmed@123\",\r\n    \"phone\":\"01030500701\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "usertoken",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Yasser  Mohammed\",\r\n    \"email\":\"mohamedYassewwwww4@gmail.com\",\r\n    \"password\":\"Ahmed@123\",\r\n    \"rePassword\":\"Ahmed@123\",\r\n    \"phone\":\"01030500701\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
